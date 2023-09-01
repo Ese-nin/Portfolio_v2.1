@@ -41,7 +41,7 @@ const Photo = styled.div`
   height: 350px;
   border-radius: 50%;
   border: 9px solid;
-  border-image: ${theme.colors.gradientBg} .5;
+  border-image: ${theme.colors.gradientBg} 1;
   background: url(${mainPhoto}) lightgray 50% / cover no-repeat;
 `
 
