@@ -12,8 +12,8 @@ const items = [
 
 export const Menu = () => {
 
-    const listItems = items.map(({title, link}) => {
-        return <ListItem>
+    const listItems = items.map(({title, link}, index) => {
+        return <ListItem key={index}>
             <Link href={link}>
                 {title}
                 <Mask>

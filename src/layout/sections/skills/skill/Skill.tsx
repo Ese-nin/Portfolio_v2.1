@@ -19,5 +19,5 @@ export const Skill: React.FC<Props> = (props) => {
 
 
 const StyledSkill = styled.div`
-  width: 20%;
+
 `

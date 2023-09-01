@@ -19,13 +19,18 @@ export const TitleSection: React.FC<Props> = (props) => {
 
 const StyledTitle = styled.div`
   text-align: center;
+  margin-bottom: 140px;
 
   h2 {
     color: ${theme.colors.font};
+    font-size: 48px;
+    font-weight: 700;
   }
 
   span {
     color: ${theme.colors.fontSecond};
+    font-size: 32px;
+    font-weight: 400;
   }
 
 `
