@@ -20,5 +20,11 @@ export const Header = () => {
 
 
 const StyledHeader = styled.header`
-  background-color: bisque;
+  background-color: rgba(25, 25, 25, 0.9);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 `
