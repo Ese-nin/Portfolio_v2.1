@@ -46,7 +46,7 @@ const PhotoBox = styled.div`
   width: 370px;
   height: 370px;
   border-radius: 50%;
-  background-image: linear-gradient(180deg, #13B0F5 -2.06%, #E70FAA 100%);
+  background-image: linear-gradient(to top, #13B0F5 -2.06%, #E70FAA 100%);
 
   &::before {
     content: "";

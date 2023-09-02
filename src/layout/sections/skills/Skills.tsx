@@ -16,11 +16,11 @@ export const Skills = () => {
                     <Skill iconId='typescript' viewBox='0 0 400 400'/>
                     <Skill iconId='css' viewBox='0 0 115 115'/>
                     <Skill iconId='html'  viewBox='0 0 115 115'/>
+                    <Skill iconId='react' viewBox="0 0 115 115"/>
                     <Skill iconId='git_skill' viewBox='0 0 90 90'/>
                     <Skill iconId='redux'/>
                     <Skill iconId='postman' viewBox="0 0 256 256"/>
                     <Skill iconId='mobX' viewBox="0 0 260 260"/>
-                    <Skill iconId='nodeJS' viewBox="0 0 290 290"/>
                     <Skill iconId='web_storm' viewBox="0 0 250 250"/>
                 </FlexContainer>
             </Container>
