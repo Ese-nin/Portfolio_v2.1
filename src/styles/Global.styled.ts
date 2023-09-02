@@ -36,4 +36,15 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.primaryBg};
     padding: 100px 0;
   }
+
+  h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+  }
 `
