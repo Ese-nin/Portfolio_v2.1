@@ -1,14 +1,15 @@
+import {Icon} from "components/icon/Icon";
+import {Menu} from "components/menu/Menu";
 import React from 'react';
 import styled from "styled-components";
-import {Menu} from "components/menu/Menu";
-import {Icon} from "components/icon/Icon";
+import {theme} from "styles/Theme";
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <TopBlock>
-                <Icon iconId='git_skill' height="50" width="50" viewBox='0 0 100 100'/>
-                <StyledContacts>
+                <Icon iconId='logo' height="70" width="70" viewBox='0 0 70 70'/>
+                <Contacts>
                     <span>+1234567890</span>
                     <span>qwerty@qwerty.com</span>
                     <div>
@@ -19,7 +20,7 @@ export const Footer = () => {
                             <Icon iconId='telegram' height='30' width='30' viewBox='0 0 45 45'/>
                         </a>
                     </div>
-                </StyledContacts>
+                </Contacts>
             </TopBlock>
             <Menu/>
         </StyledFooter>
@@ -28,21 +29,38 @@ export const Footer = () => {
 
 
 const StyledFooter = styled.footer`
-  height: 120px;
-  background-color: chocolate;
+  background-color: ${theme.colors.primaryBg};
+  padding: 40px 0;
 `
 
 const TopBlock = styled.div`
+  position: relative;
   height: 50%;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 5px;
+    width: 80%;
+    bottom: -20px;
+
+    background-color: rgba(66, 68, 110, 0.3);
+  }
 `
 
-const StyledContacts = styled.div`
+const Contacts = styled.div`
   display: flex;
   justify-content: end;
+  align-items: center;
+  width: 50%;
+  gap: 50px;
 
-  div {
-
-  }
+  font-family: DM Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: ${theme.colors.fontSecond};
 `
