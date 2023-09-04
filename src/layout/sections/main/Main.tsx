@@ -122,9 +122,11 @@ const MainPhoto = styled.img`
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  //position: absolute;
+  //top: 10px;
+  //left: 10px;
+  
+  transform: translate(10px, 10px);
 `
 
 const Name = styled.h2`
