@@ -4,9 +4,9 @@ import {FlexContainer} from "components/FlexContainer";
 import styled from "styled-components";
 import {TitleSection} from "components/TitleSection";
 import {Work} from "./work/Work";
-import proj_1 from "assets/images/projectsIMG/project_1.jpg"
-import proj_2 from "assets/images/projectsIMG/project_2.jpg"
-import proj_3 from "assets/images/projectsIMG/project_3.jpg"
+import proj_1 from "assets/images/projects/project_1.jpg"
+import proj_2 from "assets/images/projects/project_2.jpg"
+import proj_3 from "assets/images/projects/project_3.jpg"
 
 export const Works = () => {
     return (
