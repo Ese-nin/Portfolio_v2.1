@@ -1,9 +1,11 @@
-import React from 'react';
+import abstract from "assets/images/Abstract.svg"
 import mainPhoto from 'assets/images/mainPhoto.webp'
-import {FlexContainer} from "components/FlexContainer";
-import styled from "styled-components";
 import {Container} from "components/Container";
+import {FlexContainer} from "components/FlexContainer";
+import React from 'react';
+import styled from "styled-components";
 import {theme} from "styles/Theme";
+
 
 export const Main = () => {
     return (
@@ -17,18 +19,13 @@ export const Main = () => {
                     </div>
 
                     <PhotoBox>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <MainPhoto src={mainPhoto}/>
+                        <MainPhoto src={mainPhoto} alt="main photo"/>
                     </PhotoBox>
                 </FlexContainer>
             </Container>
         </StyledMain>
     );
 };
-
 
 const StyledMain = styled.section`
   min-height: 100vh;
@@ -50,71 +47,14 @@ const PhotoBox = styled.div`
 
   &::before {
     content: "";
-    position: absolute;
-    left: -25px;
-    top: -25px;
     display: inline-block;
-    height: 444px;
-    width: 444px;
-    border: 1px solid #fff;
-    border-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) 1;
-    transform: rotate(105deg);
-  }
-
-  div {
-    position: relative;
-    
-    &:first-child::before {
-      content: "";
-      position: absolute;
-      left: -25px;
-      top: -25px;
-      display: inline-block;
-      height: 444px;
-      width: 444px;
-      border: 1px solid #fff;
-      border-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) 1;
-      transform: rotate(120deg);
-    }
-
-    &:nth-child(2)::before {
-      content: "";
-      position: absolute;
-      left: -25px;
-      top: -25px;
-      display: inline-block;
-      height: 444px;
-      width: 444px;
-      border: 1px solid #fff;
-      border-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) 1;
-      transform: rotate(135deg);
-    }
-
-    &:nth-child(3)::before {
-      content: "";
-      position: absolute;
-      left: -25px;
-      top: -25px;
-      display: inline-block;
-      height: 444px;
-      width: 444px;
-      border: 1px solid #fff;
-      border-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) 1;
-      transform: rotate(150deg);
-    }
-
-    &:nth-child(4)::before {
-      content: "";
-      position: absolute;
-      left: -25px;
-      top: -25px;
-      display: inline-block;
-      height: 444px;
-      width: 444px;
-      border: 1px solid #fff;
-      border-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) 1;
-      transform: rotate(165deg);
-    }
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(${abstract});
+    width: 628px;
+    height: 628px;
   }
 `
 

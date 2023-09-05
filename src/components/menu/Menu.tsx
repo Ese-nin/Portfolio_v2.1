@@ -48,7 +48,7 @@ const Link = styled.a`
   color: transparent;
   text-align: center;
   font-family: DM Sans, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
 `
 
@@ -78,7 +78,7 @@ const ListItem = styled.li`
     content: "";
     display: inline-block;
     height: 3px;
-    background-color: ${theme.colors.fontSecond};
+    background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
     
     position: absolute;
     top: 50%;
