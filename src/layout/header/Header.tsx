@@ -1,5 +1,6 @@
 import {Container} from "components/Container";
 import {FlexContainer} from "components/FlexContainer";
+import {MobileMenu} from "components/menu/MobileMenu";
 import React from 'react';
 import styled from "styled-components";
 import {Logo} from "components/logo/Logo";
@@ -12,6 +13,7 @@ export const Header = () => {
                 <FlexContainer justify='space-between' align='center'>
                     <Logo/>
                     <Menu/>
+                    <MobileMenu/>
                 </FlexContainer>
             </Container>
         </StyledHeader>
