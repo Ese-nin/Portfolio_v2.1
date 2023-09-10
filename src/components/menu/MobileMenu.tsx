@@ -29,11 +29,11 @@ export const MobileMenu = () => {
     return (
         <StyledMenu>
 
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
 
-            <MobileMenuPopup isOpen={true}>
+            <MobileMenuPopup isOpen={false}>
                 <ul>
                     {listItems}
                 </ul>
