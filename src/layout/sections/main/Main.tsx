@@ -56,8 +56,11 @@ const PhotoBox = styled.div`
     height: 628px;
   }
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     margin-top: 50px;
+  }
+
+  @media ${theme.media.mobile} {
     width: 330px;
     height: 330px;
   }

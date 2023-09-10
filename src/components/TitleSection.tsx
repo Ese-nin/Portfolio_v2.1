@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {font} from "styles/Common";
 import {theme} from "styles/Theme";
 
 type Props = {
@@ -22,15 +23,11 @@ const StyledTitle = styled.div`
   margin-bottom: 140px;
 
   h2 {
-    color: ${theme.colors.font};
-    font-size: 48px;
-    font-weight: 700;
+    ${font({color: theme.colors.font, weight: 700, Fmax: 48, Fmin: 40})}
   }
 
   span {
-    color: ${theme.colors.fontSecond};
-    font-size: 32px;
-    font-weight: 400;
+    ${font({color: theme.colors.fontSecond, weight: 400, Fmax: 32, Fmin: 24})}
   }
 
 `

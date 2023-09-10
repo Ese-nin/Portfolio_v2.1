@@ -12,12 +12,13 @@ type Props = {
 export const Skill: React.FC<Props> = (props) => {
     return (
         <StyledSkill>
-            <Icon iconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox}/>
+            <Icon iconId={props.iconId} width={props.width} height={props.height}
+                  viewBox={props.viewBox}/>
         </StyledSkill>
     );
 };
 
 
 const StyledSkill = styled.div`
-
+  flex-grow: 1;
 `
