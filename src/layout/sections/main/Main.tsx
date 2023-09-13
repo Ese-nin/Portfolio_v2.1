@@ -57,7 +57,7 @@ const PhotoBox = styled.div`
   }
 
   @media ${theme.media.tablet} {
-    margin-top: 50px;
+    margin-top: 50px
   }
 
   @media ${theme.media.mobile} {
