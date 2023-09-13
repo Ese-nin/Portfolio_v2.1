@@ -13,18 +13,18 @@ export const Works = () => {
         <StyledWorks>
             <Container>
                 <TitleSection title={'Projects'} description={'Things I’ve built so far'}/>
-                <FlexContainer justify='space-between'>
+                <FlexContainer justify='space-between' wrap='wrap'>
                     <Work imgSRC={proj_1} workTitle="Project Title goes here"
                           description="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-                          codeLinkSRC="#" previewLinkSRC="#" technologies="HTML , JavaScript, SASS, React"
+                          codeLinkSRC="https://www.google.com" previewLinkSRC="https://www.ya.ru" technologies="HTML , JavaScript, SASS, React"
                     />
                     <Work imgSRC={proj_2} workTitle="Project Title goes here"
                           description="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-                          codeLinkSRC="#" previewLinkSRC="#" technologies="HTML , JavaScript, SASS, React"
+                          codeLinkSRC="https://www.google.com" previewLinkSRC="https://www.ya.ru" technologies="HTML , JavaScript, SASS, React"
                     />
                     <Work imgSRC={proj_3} workTitle="Project Title goes here"
                           description="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-                          codeLinkSRC="#" previewLinkSRC="#" technologies="HTML , JavaScript, SASS, React"
+                          codeLinkSRC="https://www.google.com" previewLinkSRC="https://www.ya.ru" technologies="HTML , JavaScript, SASS, React"
                     />
                 </FlexContainer>
             </Container>
