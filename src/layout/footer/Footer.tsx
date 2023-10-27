@@ -3,25 +3,28 @@ import {Icon} from "components/icon/Icon";
 import {Menu} from "components/menu/Menu";
 import React from 'react';
 import styled from "styled-components";
+import {font} from "styles/Common";
 import {theme} from "styles/Theme";
+import logo from "assets/images/footer_logo.svg"
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
                 <TopBlock>
-                    <Icon iconId='logo' height="70" width="70" viewBox='0 0 70 70'/>
+                    <img src={logo} alt="logo"/>
                     <Contacts>
                         <span>+1234567890</span>
                         <span>qwerty@qwerty.com</span>
-                        <div>
+                        <Links>
                             <a href="#">
-                                <Icon iconId='git_contact' height='30' width='30' viewBox='0 0 40 40'/>
+                                <Icon iconId='git_contact' height='30' width='30'
+                                      viewBox='0 0 40 40'/>
                             </a>
                             <a href="#">
                                 <Icon iconId='telegram' height='30' width='30' viewBox='0 0 45 45'/>
                             </a>
-                        </div>
+                        </Links>
                     </Contacts>
                 </TopBlock>
                 <Menu/>
@@ -46,12 +49,17 @@ const TopBlock = styled.div`
   &::after {
     content: "";
     position: absolute;
-    display: inline-block;
+    display: block;
     height: 5px;
     width: 100%;
     bottom: -20px;
 
     background-color: rgba(66, 68, 110, 0.3);
+  }
+  
+  @media ${theme.media.mobile} {
+    flex-direction: column;
+    align-items: center
   }
 `
 
@@ -60,10 +68,15 @@ const Contacts = styled.div`
   justify-content: end;
   align-items: center;
   width: 50%;
-  gap: 50px;
+  gap: 35px;
 
-  font-family: DM Sans, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: ${theme.colors.fontSecond};
+  ${font({family: "DM Sans, sans-serif", Fmax: 18, Fmin: 14, color: theme.colors.fontSecond})}
+  
+  @media ${theme.media.mobile} {
+    justify-content: center;
+  }
+`
+
+const Links = styled.div`
+  display: flex;
 `
